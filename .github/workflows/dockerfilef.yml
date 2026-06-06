@@ -35,3 +35,4 @@ jobs:
 
       - name: Push The Docker Image
         run: docker push $IMAGE_NAME:latest
+        
