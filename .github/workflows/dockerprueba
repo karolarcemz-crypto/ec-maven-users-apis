@@ -24,7 +24,7 @@ jobs:
         run: mvn clean package -DskipTests
 
       - name: Login to Dockerhub
-        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+        run: echo "${{ secrets.DOCKERHUB_TOKEN1 }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
       - name: Set Image Name
         id: vars
