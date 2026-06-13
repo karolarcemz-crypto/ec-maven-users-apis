@@ -11,7 +11,7 @@ env:
   IMAGE_NAME:      mi-aplicacion-java
   IMAGE_TAG:       latest
   DOCKERFILE_PATH: Dockerfile
-  ACR_REGISTRY:    cregatceastus01.azurecr.io
+  ACR_REGISTRY:    karolarcemonzon01.azurecr.io
 
 jobs:
   # ─────────────────────────────────────────────
