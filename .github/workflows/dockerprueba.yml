@@ -93,6 +93,7 @@ jobs:
       - name: Cargar imagen en Docker
         run: docker load -i image.tar
 
+
       - name: Login en Azure Container Registry
         run: |
           docker login ${{ env.ACR_REGISTRY }} \
