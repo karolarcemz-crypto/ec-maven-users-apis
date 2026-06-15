@@ -6,7 +6,7 @@ on:
 
 jobs:
   call-acr-template:
-    uses: jonpando/templates-workflows/.github/workflows/Azure-ACR.yml@main
+    uses: karolarcemz-crypto/templates-workflows/.github/workflows/Azure-ACR.yml@main
     with:
       java-version: '17' # Opcional
     secrets:
