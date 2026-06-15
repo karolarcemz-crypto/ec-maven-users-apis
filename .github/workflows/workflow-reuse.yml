@@ -10,6 +10,6 @@ jobs:
     with:
       java-version: '17' # Opcional
     secrets:
-      ACR_LOGIN_SERVER: ${{ secrets.MI_ACR_SERVER }}
+      ACR_LOGIN_SERVER: ${{ secrets.DOCKERHUB_USERNAME }}
       ACR_USERNAME: ${{ secrets.DOCKER_CREDS_USR }}
       ACR_PASSWORD: ${{ secrets.DOCKER_CREDS_PSW }}
