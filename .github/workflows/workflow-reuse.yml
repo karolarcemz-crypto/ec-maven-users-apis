@@ -1,0 +1,15 @@
+name: Deploy Main App
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  call-acr-template:
+    uses: jonpando/templates-workflows/.github/workflows/Azure-ACR.yml@main
+    with:
+      java-version: '17' # Opcional
+    secrets:
+      ACR_LOGIN_SERVER: ${{ secrets.MI_ACR_SERVER }}
+      ACR_USERNAME: ${{ secrets.MI_ACR_USER }}
+      ACR_PASSWORD: ${{ secrets.MI_ACR_PASS }}
