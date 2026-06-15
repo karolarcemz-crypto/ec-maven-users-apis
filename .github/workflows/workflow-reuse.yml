@@ -11,5 +11,5 @@ jobs:
       java-version: '17' # Opcional
     secrets:
       ACR_LOGIN_SERVER: ${{ secrets.MI_ACR_SERVER }}
-      ACR_USERNAME: ${{ secrets.MI_ACR_USER }}
-      ACR_PASSWORD: ${{ secrets.MI_ACR_PASS }}
+      ACR_USERNAME: ${{ secrets.DOCKER_CREDS_USR }}
+      ACR_PASSWORD: ${{ secrets.DOCKER_CREDS_PSW }}
