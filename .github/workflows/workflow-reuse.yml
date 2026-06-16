@@ -1,4 +1,3 @@
-
 name: Deploy Main App
 
 on:
@@ -11,6 +10,6 @@ jobs:
     with:
       java-version: '17'
     secrets:
-      ACR_LOGIN_SERVER: docker.io
-      ACR_USERNAME: ${{ secrets.DOCKER_CREDS_USR }}
-      ACR_PASSWORD: ${{ secrets.DOCKER_CREDS_PSW }}
+      ACR_LOGIN_SERVER: ${{ secrets.ACR_LOGIN_SERVER }}
+      ACR_USERNAME: ${{ secrets.ACR_USERNAME }}
+      ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
