@@ -1,3 +1,4 @@
+
 name: Deploy Main App
 
 on:
@@ -8,8 +9,8 @@ jobs:
   call-acr-template:
     uses: karolarcemz-crypto/templates-workflows/.github/workflows/Azure-ACR.yml@main
     with:
-      java-version: '17' # Opcional
+      java-version: '17'
     secrets:
-      ACR_LOGIN_SERVER: ${{ secrets.DOCKERHUB_USERNAME }}
+      ACR_LOGIN_SERVER: docker.io
       ACR_USERNAME: ${{ secrets.DOCKER_CREDS_USR }}
       ACR_PASSWORD: ${{ secrets.DOCKER_CREDS_PSW }}
